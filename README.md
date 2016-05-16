@@ -1,2 +1,3 @@
 # atom-icons
-The awesome icons for Atom
+
+The awesome icons for Atom.

@@ -1,0 +1,14 @@
+{
+  "name": "atom-icons",
+  "main": "index",
+  "version": "0.1.0",
+  "description": "The awesome icons for Atom",
+  "keywords": [
+    "icon"
+  ],
+  "repository": "https://github.com/tvrcgo/atom-icons.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

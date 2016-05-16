@@ -1,5 +1,5 @@
 
-.icon-tab(@extension: ''; @type: ''; @top: 0; @right: 0; @left: 0; @offset: -6px) when (default()) {
+.icon-tab(@extension: ''; @type: ''; @top: 0; @right: 0; @left: 0; @offset: -4px) when (default()) {
     tabs-bar tabs-tab .title[data-name$="@{extension}"], .tab-bar .tab .title[data-name$="@{extension}"] {
 
         position: relative;
@@ -39,5 +39,5 @@
 
 .icon-mix(@extension: ''; @type: '') when (default()) {
     .icon-tree(@extension, @type, 1px, 4px, -4px, -6px);
-    .icon-tab(@extension, @type, 5px, -2px, -6px, -4px);
+    .icon-tab(@extension, @type, 6px, -2px, -6px, -6px);
 }

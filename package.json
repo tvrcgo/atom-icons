@@ -1,7 +1,7 @@
 {
   "name": "atom-icons",
   "main": "index",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The awesome icons for Atom",
   "keywords": [
     "icon"

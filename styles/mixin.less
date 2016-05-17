@@ -1,5 +1,5 @@
 
-.icon-tab(@extension: ''; @type: ''; @top: 0; @right: 0; @left: 0; @offset: -4px) when (default()) {
+.icon-tab(@extension: ''; @type: ''; @size: 20px; @top: 0; @right: 0; @left: 0; @offset: -4px; @color: '') when (default()) {
     tabs-bar tabs-tab .title[data-name$="@{extension}"], .tab-bar .tab .title[data-name$="@{extension}"] {
 
         position: relative;
@@ -9,35 +9,35 @@
         &:before {
             font-family: icomoon;
             content: "@{icon-@{type}}";
-            font-size: 20px;
+            font-size: @size;
             position: relative;
             top: @top;
             left: @left;
             margin-right: @right;
-            color: ~"@{color-@{type}}";
+            color: ~"@{color}";
         }
     }
 }
 
-.icon-tree(@extension: ''; @type: ''; @top: 0; @right: 2px; @left: -5px; @offset: -6px) when (default()) {
+.icon-tree(@extension: ''; @type: ''; @size: 20px; @top: 0; @right: 2px; @left: -5px; @offset: -6px; @color: '';) when (default()) {
 
     .name.icon[data-name$="@{extension}"] {
 
         &:before {
             font-family: icomoon;
             content: "@{icon-@{type}}";
-            font-size: 20px;
+            font-size: @size;
             position: relative;
             left: @left;
             top: @top;
             margin-right: @right;
-            color: ~"@{color-@{type}}";
+            color: ~"@{color}";
         }
 
     }
 }
 
-.icon-mix(@extension: ''; @type: '') when (default()) {
-    .icon-tree(@extension, @type, 1px, 4px, -4px, -6px);
-    .icon-tab(@extension, @type, 6px, -2px, -6px, -6px);
+.icon-set(@extension: ''; @type: ''; @color: #9DA5B4; @size: 20px) when (default()) {
+    .icon-tree(@extension, @type, @size, 1px, 4px, -4px, -6px, @color);
+    .icon-tab(@extension, @type, @size, 6px, -2px, -6px, -6px, @color);
 }

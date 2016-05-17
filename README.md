@@ -2,7 +2,7 @@
 
 The awesome icons for Atom.
 
-![atom-icons](preview.png)
+![atom-icons](http://tvrcgo.qiniudn.com/github/atom-icons/preview.png)
 
 ## License
 MIT

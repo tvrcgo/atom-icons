@@ -1,22 +1,14 @@
 @font-face {
   font-family: 'icomoon';
   src:url('atom://atom-icons/styles/fonts/seti.eot');
-  src:url('atom://atom-icons/styles/fonts/seti.eot') format('embedded-opentype'),
+  src:url('atom://atom-icons/styles/fonts/seti.eot?#iefix') format('eot'),
     url('atom://atom-icons/styles/fonts/seti.woff') format('woff'),
+    url('atom://atom-icons/styles/fonts/seti.woff2') format('woff2'),
     url('atom://atom-icons/styles/fonts/seti.ttf') format('truetype'),
     url('atom://atom-icons/styles/fonts/seti.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-
-// BASIC COLORS
-@color-default: #D3D6D5; // Default/fallback icon color
-@color-status-ignored: #40535B;
-@color-status-added: rgb(159,202,86);
-@color-status-renamed: rgb(79,153,211);
-@color-status-modified: rgb(220,205,105);
-@color-status-removed: rgb(206,64,69);
-
 
 // ICON FONTS
 @icon-bower: '\e003';
@@ -29,21 +21,21 @@
 @icon-css: '\e00e';
 @icon-css3: '\e00e';
 @icon-config: '\e00c';
-@icon-default: '\e612';
+@icon-txt: '\e010';
 @icon-dir: "\e017";
 @icon-ejs: '\e014';
 @icon-font: '\e018';
-@icon-ico: '\e61d';
-@icon-fav: '\e016';
+@icon-ico: '\e016';
+@icon-git: '\e019';
 @icon-go: '\e01c';
 @icon-grunt: '\e01f';
 @icon-gulp: '\e020';
 @icon-handlebars: '\e60f';
 @icon-haskel: '\e677';
-@icon-hidden: '\e615';
 @icon-html: '\e025';
 @icon-html5: '\e026';
 @icon-github: '\e01b';
+@icon-ignore: '\e027';
 @icon-img: '\e029';
 @icon-jade: '\e02a';
 @icon-java: '\e02b';
@@ -54,11 +46,10 @@
 @icon-karma: '\e61c';
 @icon-less: '\e031';
 @icon-license: '\e032';
-@icon-md: '\e036';
+@icon-markdown: '\e036';
 @icon-mustache: '\e037';
 @icon-npm: '\e039';
-@icon-php: '\e025';
-@icon-procfile: '\e00c';
+@icon-php: '\e03f';
 @icon-py: '\e043';
 @icon-rb: '\e046';
 @icon-sass: '\e048';
@@ -75,58 +66,18 @@
 @icon-xml: '\e059';
 @icon-yml: '\e05a';
 
-
-
-
 // ICON COLORS
-@color-bower: #F0582B; // BOWER
-@color-coffee: #a6814f; // COFFEE FILES
-@color-css: #29A8DE; // CSS
-@color-css3: #29A8DE; // CSS
-@color-ejs: #10f596; // EJS
-@color-go: #6AD7E5; // Go
-@color-c: #659AD2; // C
-@color-h: #659AD2; // C.h
-@color-cpp: #00599C; // C++
-@color-hpp: #00599C; // C++
-@color-font: #e7e9eb; // Font
-@color-grunt: #FAA91A; // Grunt
-@color-gulp: #EE4845; // Gulp
-@color-handlebars: #E58824; // Mustache
-@color-haskel: #999999; // Haskel
-@color-hidden: #40535B; // Hidden files
-@color-html: #F26621; // HTML
-@color-html5: #F26621; // HTML
-@color-github: #eee; // Github
-@color-ico: #f1dd3f; // Favicon
-@color-fav: #f1dd3f; // Favicon
-@color-img: #35BAA0; // Images
-@color-jade: #9FCA56; // Jade
-@color-js: #F1DD3F; // JavaScript
-@color-java: #E76F00; // Java
-@color-jsx: #84d4f3; // React
-@color-json: #F1D06D; // JSON
-@color-jl: #aa7db7; // JULIA
-@color-karma: #35b99f; // KARMA
-@color-less: #29A8DE; // Less
-@color-license: #BCA784; // LICENSE
-@color-md: #755838; // Markdown
-@color-mustache: #E58824; // Mustache
-@color-stache: #E58824; // Stache
-@color-npm: #CD3631; // NPM
-@color-php: #6C5FA9; // PHP
-@color-procfile: #5C5887; // Procfile
-@color-py: #356EA0; // Python
-@color-rb: #B42839; // RoR
-@color-react: #84d4f3; // React
-@color-sass: #CE6499; // Sass
-@color-settings: #AAA;
-@color-styl: #B3D034; // Stylus
-@color-scala: #DD0015; // Scala
-@color-shell: #FFFFFF; // Shell
-@color-swift: #FC953B; // Swift
-@color-svg: #b66ff3; // SVG
-@color-ts: #2279bf; // TypeScript
-@color-xml: #F79451; // XML
-@color-yml: #542d8d; // YML
-@color-config: #5C5887; // Config
+@color-default: #9DA5B4;
+@color-status-ignored: #40535B;
+@color-status-added: rgb(159,202,86);
+@color-status-renamed: rgb(79,153,211);
+@color-status-modified: rgb(220,205,105);
+@color-status-removed: rgb(206,64,69);
+
+@color-blue: #29A8DE;
+@color-yellow: #F1DD3F;
+@color-red: #F26621;
+@color-purple: #5C5887;
+@color-green: #10f596;
+@color-pink: #CE6499;
+@color-metal: #BCA784;
